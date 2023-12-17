@@ -3,26 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <title>Speech To Text</title>
+    <link rel="stylesheet" href="css/main4.css">
+    <title>v</title>
   </head>
-  <body class="container pt-5 bg-dark">
-    <div class="mt-4" id="div_language">
-      <h2 class="mb-3 text-light">Выбери язык</h2>
-      <select class="form-select bg-secondary text-light" id="select_language" onchange="updateCountry()"></select>
-      <select class="form-select bg-secondary text-light mt-2" id="select_dialect"></select>
-    </div>
-    <h2 class="mt-4 text-light">Transcript</h2>
-    <div class="p-3" style="border: 1px solid gray; height: 300px; border-radius: 8px;">
-      <span id="final" class="text-light"></span>
-      <span id="interim" class="text-secondary"></span>
-    </div>
-    <div class="mt-4">
-      <button class="btn btn-success" id="start">Start</button>
-      <button class="btn btn-danger" id="stop">Stop</button>
-      <p id="status" class="lead mt-3 text-light" style="display: none">Listenting ...</p>
-    </div>
+  <body>
+    <header class="hero-section"></header>
+        <div class="head">
+            <a href="index.html"> <img src="img/logo1.png" alt="Alt"></a>
+
+            <div class="function">
+                <a href="index.html">Главная</a>
+                <a href="function.html">Станции</a>
+                <a href="o nas.html">О нас</a>
+            </div>
+        </div>
+    </header>
+    <footer class="container" >
+        <div class="mt-4" id="div_language">
+            <div class="form-select bg-secondary text-light" id="select_language" onchange="updateCountry()"></div>
+            
+          </div>
+          <h2 class="text">Начать наше общение</h2>
+          <div class="p-3" style="border: 2px solid rgb(160, 30, 132); height: 200px; border-radius: 30px;">
+            <span id="final" class="text-light"></span>
+            <span id="interim" class="text-secondary"></span>
+          </div>
+          <div class="button">
+              <button class="buttonstar" id="start">Не нажимай, я потеку</button>
+              <h2 id="status" class="listening" style="display: none">Теку...</h2>
+          </div>
+      </footer>
   </body>
+  <input type="file" id="fileInput" style="display: none;">
   <script src="js/app2.js"></script>
   <script src="js/app3.js"></script>
 </html>

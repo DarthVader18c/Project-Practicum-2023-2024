@@ -1,0 +1,36 @@
+.container {
+    width: 500px;
+    margin: 10px auto;
+    background-color: rgb(235, 235, 235);
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+  #search-input{
+    padding: 7px;
+    border: 1px solid rgb(111, 111, 111);
+    width: 300px;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+  button {
+    padding: 10px 0;
+    border: none;
+    margin-left: 5px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 80px;
+    transition: all 0.5s;
+  }
+  button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  #start-button{
+    background-color: rgb(13, 156, 0);
+  }
+  #stop-button{
+    background-color: rgb(156, 34, 0);
+  }
